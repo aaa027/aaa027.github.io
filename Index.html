@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <!-- Meta viewport atualizado para impedir zoom e arraste -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>aaa027</title>
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      position: relative;
+      min-height: 100vh;
+      margin: 0;
+      overflow: hidden;
+    }
+    /* Container para o GIF de fundo */
+    .background-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -3;
+    }
+    /* Overlay com degradê de preto para vermelho escuro */
+    .background-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(139,0,0,0.7));
+      z-index: -2;
+    }
+    .ascii-art {
+      font-family: monospace;
+      white-space: pre;
+      font-size: 8px;
+      line-height: 1.2;
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+    @media (max-width: 640px) {
+      .ascii-art {
+        font-size: 6px;
+      }
+    }
+    .discord-logo {
+      filter: hue-rotate(330deg) saturate(500%);
+    }
+  </style>
+</head>
+<body class="text-white flex flex-col items-center justify-center p-6">
+  <!-- Fundo: GIF aleatório -->
+  <img id="bgGif" class="background-container" src="" alt="Background GIF">
+  <!-- Overlay degradê -->
+  <div class="background-overlay"></div>
+  
+  <!-- Conteúdo Principal -->
+  <div class="flex flex-col items-center justify-center text-center">
+    <!-- ASCII Art acima da foto -->
+    <div class="w-full flex justify-center mb-4">
+      <pre class="ascii-art text-red-500">
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⠔⡿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠹⡒⢄⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⢀⡖⠁⣸⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣧⠈⢳⣄⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⢠⡟⠀⠀⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢻⡄⠀⢹⣆⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⢠⡿⠀⠀⢠⡗⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⡇⠀⠀⢻⡆⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⣾⠁⠀⠀⢸⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⡇⠀⠀⠈⣯⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⢰⡞⠀⠀⠀⠈⢻⡀⠀⠀⠀⠀⠀⣀⣤⡴⠶⠞⠛⠛⠛⠛⠛⠻⠶⢶⣤⣀⠀⠀⠀⠀⠀⠀⣿⠃⠀⠀⠀⢸⡇⠀⠀⠀⠀
+⠀⠀⠀⠀⢸⡇⠀⠀⠀⠀⠘⣷⡀⠀⣀⡴⢛⡉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⡛⢦⣄⠀⠀⣼⠇⠀⠀⠀⠀⢸⡇⠀⠀⠀⠀
+⢰⡀⠀⠀⢸⡇⠀⠀⠀⠀⠀⠈⠳⣾⣭⢤⣄⠘⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠃⢀⡤⣈⣷⠞⠃⠀⠀⠀⠀⠀⢸⡇⠀⠀⠀⡄
+      </pre>
+    </div>
+    
+    <!-- Imagem de Perfil -->
+    <img src="https://cdn.discordapp.com/avatars/1353027263527911444/24706b4aeb1fff1029a443dd4f3d2848.webp?size=2048" 
+         alt="aaa027" class="w-32 h-32 md:w-40 md:h-40 rounded-full border-4 border-red-700 shadow-lg mb-4">
+    
+    <!-- Nome -->
+    <h1 class="text-4xl md:text-6xl font-bold text-red-700 drop-shadow-lg mb-4">aaa027</h1>
+    
+    <!-- Descrição sem o título "Sobre Mim" -->
+    <div class="text-gray-200 text-center mb-6 max-w-lg">
+      <p class="text-base md:text-lg">
+        Fala ae, me chamo 027, sou desenvolvedor de sites e bots para o Discord, Telegram e para a Rede Tor... Além da criação de redes de armazenamento privados, se sentir interesse, me chama no Discord.
+      </p>
+    </div>
+    
+    <!-- Link para o Discord -->
+    <div class="flex justify-center items-center space-x-2">
+      <a href="https://discord.com/users/1353348895660572672" target="_blank" class="flex items-center text-red-700 hover:text-red-500">
+        <img src="https://media.discordapp.net/attachments/1353365160013729935/1353414594093387898/5968756.png?ex=67e19110&is=67e03f90&hm=eeebdba8fb70600187930bd88d34e2eeefc78f9ef7b442c0b45b10e63bbe2c23&" 
+             alt="Discord Logo" class="w-8 h-8 mr-2 discord-logo">
+        Discord
+      </a>
+    </div>
+  </div>
+  
+  <script>
+    // Array com os URLs dos GIFs
+    const gifs = [
+      "https://media.discordapp.net/attachments/1204216159738662963/1208142288702677052/7bbc1edf71716b0459a75ead6f781d77.gif?ex=67e1126f&is=67dfc0ef&hm=acd991f69903c984edfa9a1647df915cca1b03a8000a84a3c3f97c96bd48cf18",
+      "https://media.discordapp.net/attachments/1204216159738662963/1208142368784650340/original.gif?ex=67e11282&is=67dfc102&hm=2d233e87f714569295277d3934ca2da7500bc23cf1a9a5406e7048001f8b0c82",
+      "https://media.discordapp.net/attachments/1204216159738662963/1208142427622477844/original_1.gif?ex=67e11290&is=67dfc110&hm=ae757f8def1dee160954c65042b955a7a4d7205e9e33ada704729ea875bbac6c",
+      "https://media.discordapp.net/attachments/1204216159738662963/1208142580034965614/33F58063-2480-4D4E-A63B-805995628E38.gif?ex=67e112b5&is=67dfc135&hm=ba3a27aa2142929e64596be4b5f18c68f1b8f4098568f325936702e80a0107b9",
+      "https://media.discordapp.net/attachments/1204216159738662963/1208142591275831347/8355D2B1-462D-4DE4-B8EF-7734A44DC8ED.gif?ex=67e112b7&is=67dfc137&hm=ed71a178ff538bbcd2401aa59a8965de92f5d91ba6191d68d80aaadc43344ddf",
+      "https://media.discordapp.net/attachments/1204216159738662963/1208146718038691921/4E8B2C36-1A7B-4AB4-920B-C1F4FFC21FA7.gif?ex=67e1168f&is=67dfc50f&hm=00d9ae9f4ce27c336343d32e26b853b8e3a3bb82791bdbfd3047ef0ed8ad4adb"
+    ];
+    // Seleciona aleatoriamente um GIF e define como src da imagem de fundo
+    const randomGif = gifs[Math.floor(Math.random() * gifs.length)];
+    document.getElementById("bgGif").src = randomGif;
+  </script>
+</body>
+</html>
