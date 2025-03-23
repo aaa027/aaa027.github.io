@@ -1,0 +1,14 @@
+@layer base {
+  body, h1, p {
+    font-family: 'Poppins', sans-serif;
+  }
+}
+
+/* Estilos adicionais */
+a {
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #f472b6; /* Cor de destaque */
+}
